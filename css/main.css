@@ -1,0 +1,67 @@
+body {
+	color: #4d4d4d;
+    font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+.boards {
+	margin:15px;
+	padding-left:15px;
+	padding-right: 15px;
+	background-color: #eee;
+    border-radius: 4px;
+}
+.boards .list_header {
+	padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: 1.5em; 
+}
+textarea {
+	width:100%;
+	min-height:60px;
+	resize:none;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+#text_area {
+	display: none;
+}
+#text_area button {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #61bd4f;
+    background: -webkit-linear-gradient(top,#61bd4f 0,#5aac44 100%);
+    background: linear-gradient(to bottom,#61bd4f 0,#5aac44 100%);
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.icon_close {
+	font-size: 22px;
+	margin-left: 10px;
+	color:#999;
+}
+#text_area span:hover {
+	cursor: pointer;
+	color:#000;
+}
+.items {
+    padding: 5px;
+    min-height: 15px;
+    background-color: white;
+    border-radius: 4px;
+    max-height: 50px;
+    margin-bottom: 10px;
+}
+.items:hover{
+	background-color: #F8F8F8;
+}
+.modal-dialog {
+    z-index: 1500;
+    margin-top: 150px;
+}
+.modal-content {
+	min-height: 150px;
+}
+.close_tag{
+	float:right;
+	cursor:pointer;
+}

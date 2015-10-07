@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Agent-Making Handling tasks Easy</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<script type="text/javascript" src="../javaScript/events.js"></script>
+</head>
+<body>
+<div id="lightbox" class="modal fade in">
+    <div class="container">
+        <div class="modal-backdrop fade in" style="opacity: 0.5;"></div>
+        <div class="container modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span class="close_tag" onclick="_close()"><strong>X</strong></span>
+                    <div>
+                    	<h3 id="item_todo"></h4>
+                    	<br>
+                    	<button onclick="priotrizeIt()">Make First Priority</button>
+                    	<button onclick="markDone()">Mark It Done</button>
+                    	<button onclick="deleteIt(event)">Delete the Task</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid container">
+  <h1>Hello There!</h1>
+  <p>Want to Manage Ur Tasks, We are there to help u..</p>
+  <div class="row">
+    <div class="col-sm-6 ">
+    	<div class="list boards">
+    		<div class="list_header"><strong>Backlogs</strong></div>
+    		<div class="list_items">
+    			<div id="backlogs_items"></div>
+    			<div id="text_area">
+    				<textarea id="task" autofocus></textarea>
+    				<button onclick="saveCard()">Save</button>
+    				<span class="icon_close" onclick="toggleCard()">X</span>
+    			</div>
+    			<div class="add_tasks list_header">
+    				<a id="add_card" onclick="toggleCard()">Add a task . . .</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="col-sm-6 ">
+    	<div class="list boards">
+    		<div class="list_header"><strong>Completed</strong></div>
+    		<div class="list_items">
+				<div id="done_items"></div>
+				<br>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
